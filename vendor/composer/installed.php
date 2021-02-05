@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'ebfdd40ba956e643d3db61305739cb9a5a587466',
     'name' => 'j.aguiar/buscador',
   ),
   'versions' => 
@@ -76,12 +76,12 @@
     ),
     'j.aguiar/buscador' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'ebfdd40ba956e643d3db61305739cb9a5a587466',
     ),
     'microsoft/tolerant-php-parser' => 
     array (
