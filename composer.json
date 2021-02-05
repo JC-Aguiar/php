@@ -41,5 +41,8 @@
       "phan": "execute phan filter to find possible errors in the program",
       "test": "execute quick tests in programs classes with phpunit",
       "check": "execute the fallow commands: cs, phan and test"
-  }
+  },
+  "bin": [
+    "BuscadorGeral.php"
+  ]
 }
