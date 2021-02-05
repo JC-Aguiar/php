@@ -1,0 +1,45 @@
+{
+  "name": "j.aguiar/buscador",
+  "type": "library",
+  "description": "Projeto teste 2 para encontrar cursos e notícias no banco de sites",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+      {
+        "name": "JM Costal Aguiar",
+        "email": "jcostalaguiar@gmail.com"
+      }
+  ],
+  "require": {
+      "symfony/dom-crawler": "^5.2",
+      "guzzlehttp/guzzle": "^7.2",
+      "symfony/css-selector": "^5.2"
+  },
+  "require-dev": {
+      "phpunit/phpunit": "^9.5",
+      "squizlabs/php_codesniffer": "^3.5",
+      "phan/phan": "^4.0.3"
+  },
+  "autoload": {
+      "psr-4": {
+          "App\\Buscador\\": "src/",
+          "App\\Tests\\": "tests/"
+      }
+  },
+  "scripts": {
+      "cs": "phpcs --standard=PSR12 src/",
+      "phan": "phan --allow-polyfill-parser",
+      "test": "phpunit tests\\TestBuscadorDeCursos.php",
+      "check": [
+          "@cs",
+          "@phan",
+          "@test"
+      ]
+  },
+  "scripts-descriptions": {
+      "cs": "execute phpcs PSR12 filter to find bad pratics in the code",
+      "phan": "execute phan filter to find possible errors in the program",
+      "test": "execute quick tests in programs classes with phpunit",
+      "check": "execute the fallow commands: cs, phan and test"
+  }
+}
